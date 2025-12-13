@@ -1,7 +1,6 @@
 // components/SkillBarPlain.jsx
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import "./skillbar.css"; // فایل CSS را بساز
 
 export default function SkillBarPlain({
     label = "Skill",
