@@ -1,0 +1,211 @@
+@keyframes blink {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+@keyframes handsShake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes click {
+    0% {
+        opacity: 1;
+        scale: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+        scale: 1.3;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes light {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+        scale: 1;
+    }
+}
+
+@keyframes heading {
+    0% {
+        opacity: 0;
+        transform: translateX(-2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes headerText {
+    0% {
+        opacity: 0;
+        transform: translateX(4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes headerImage {
+    0% {
+        opacity: 0;
+        scale: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes imageFrame {
+    0% {
+        box-shadow: 0 0 7rem var(--color-green);
+    }
+
+    50% {
+        box-shadow: 0 0 10rem var(--color-green);
+    }
+
+    100% {
+        box-shadow: 0 0 7rem var(--color-green);
+    }
+}
+
+@keyframes header {
+    0% {
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes firstBubble {
+    0% {
+        transform: translateY(10rem);
+    }
+
+    50% {
+        transform: translateY(0rem);
+    }
+
+    100% {
+        transform: translateY(10rem);
+    }
+}
+
+@keyframes secondBubble {
+    0% {
+        transform: translateY(25rem);
+    }
+
+    50% {
+        transform: translateY(0rem);
+    }
+
+    100% {
+        transform: translateY(25rem);
+    }
+}
+
+@keyframes thirdBubble {
+    0% {
+        transform: translateY(20rem);
+    }
+
+    50% {
+        transform: translateY(0rem);
+    }
+
+    100% {
+        transform: translateY(20rem);
+    }
+}
+
+@keyframes moreProjects {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes chart {
+    0% {
+        rotate: 90deg;
+        scale: 0.5;
+    }
+
+    50% {
+        rotate: 360deg;
+        scale: 1;
+    }
+
+    100% {
+        rotate: 90deg;
+        scale: 0.5;
+    }
+}
+
+    @keyframes certificate {
+        0% {
+            top: 0rem;
+            transform: rotate(0);
+        }
+        
+        50% {
+            top: 15rem;
+            transform: rotate(180deg);
+        }
+        
+        100% {
+            top: 0rem;
+            transform: rotate(0);
+        }
+    }

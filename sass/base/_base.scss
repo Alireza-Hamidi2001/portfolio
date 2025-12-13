@@ -1,0 +1,56 @@
+@use './../abstracts/mixins' as *;
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(phone) {
+        font-size: 37.5%;
+    }
+}
+
+body {
+    font-family: 'open-sans';
+    background: var(--color-primary-dark);
+    color: var(--color-primary-text);
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-white);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-black);
+    border-radius: 10px;
+    transition: all 0.4s;
+
+    &:hover {
+        background: #7d7d7d;
+
+    }
+}
