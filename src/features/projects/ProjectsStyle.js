@@ -16,7 +16,7 @@ export const StyledProjects = styled.div`
     column-gap: 3rem;
     transform: skewY(6deg);
     padding: 10rem 5rem;
-    
+
     ${respond("tab-port")`
             grid-template-columns: 1fr 1fr;
         `}
@@ -81,6 +81,12 @@ export const H1 = styled.h1`
     align-items: center;
     justify-content: center;
     gap: 2rem;
+
+    ${respond("phone")`
+    word-spacing: 5px;
+        font-size: 3rem;
+        gap: 1rem;
+    `}
 `;
 
 export const P = styled.h1`

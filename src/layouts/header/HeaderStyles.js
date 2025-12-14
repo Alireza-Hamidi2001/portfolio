@@ -172,8 +172,6 @@ export const ImageWrapper = styled.div`
         animation: imageFrame 1s infinite;
 
         ${respond("phone")`
-            top: 35rem;
-            left: 30rem;
     `}
     }
 
@@ -184,9 +182,5 @@ export const ImageWrapper = styled.div`
         position: relative;
         margin: 0 auto;
 
-        ${respond("phone")`
-            width: 75rem;
-            height: 75rem;
-    `};
     }
 `;

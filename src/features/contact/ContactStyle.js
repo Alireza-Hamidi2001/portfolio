@@ -8,6 +8,7 @@ export const StylesContact = styled.div`
 
     ${respond("phone")`
         padding-left: 0;
+        padding: 20rem 0 20rem 0;
     `}
 
     & img {
@@ -22,8 +23,8 @@ export const Main = styled.main`
     z-index: 2;
 
     ${respond("phone")`
+            padding: 0;
             grid-template-columns: 1fr;
-            gap: 8rem;
         `}
 `;
 
@@ -34,9 +35,10 @@ export const StyledUl = styled.ul`
     gap: 5rem;
     padding-left: 5rem;
     margin: 0 auto;
-
+    
     ${respond("phone")`
-        margin-top:10rem
+        width: 80%;
+        margin-top: 10rem;
     `}
 
     & h1 {
