@@ -2,15 +2,15 @@
 
 .skillbar-root {
     margin-bottom: 1rem;
-    // width: 40vw;
+    width: 80%;
     margin: 0 auto;
 
     @include respond(tab-land) {
-        // width: 30vw;
+        width: 85%;
     }
 
-    @include respond(phone) {
-        // width: 70vw;
+    @include respond(tab-port) {
+        width: 90%;
     }
 }
 
