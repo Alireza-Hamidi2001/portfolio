@@ -8,7 +8,7 @@ export const StylesContact = styled.div`
 
     ${respond("phone")`
         padding-left: 0;
-        padding: 20rem 0 20rem 0;
+        padding: 20rem 0 30rem 0;
     `}
 
     & img {
