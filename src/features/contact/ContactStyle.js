@@ -35,7 +35,7 @@ export const StyledUl = styled.ul`
     gap: 5rem;
     padding-left: 5rem;
     margin: 0 auto;
-    
+
     ${respond("phone")`
         width: 80%;
         margin-top: 10rem;
@@ -45,6 +45,14 @@ export const StyledUl = styled.ul`
         font-size: 3.4rem;
         font-family: "Lime";
     }
+`;
+export const Social = styled.div`
+    font-family: "KottaOne";
+    font-size: 3rem;
+
+    ${respond("phone")`
+        font-size: 4rem;
+    `}
 `;
 
 export const StyledLi = styled.li`
@@ -58,6 +66,39 @@ export const StyledLi = styled.li`
     align-items: center;
     width: max-content;
 
+    &:nth-of-type(1) ${Social} {
+        background: linear-gradient(45deg, #0088cc, #26a5e4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Linkedin */
+    &:nth-of-type(2) ${Social} {
+        background: linear-gradient(45deg, #0a66c2, #004182);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Instagram */
+    &:nth-of-type(3) ${Social} {
+        background: linear-gradient(
+            45deg,
+            #405de6,
+            #833ab4,
+            #e1306c,
+            #f56040,
+            #fcaf45
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Github */
+    &:nth-of-type(4) ${Social} {
+        background: linear-gradient(45deg, #fff, #232930);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     & a {
         text-decoration: none;
         color: var(--color-primary-light);
@@ -75,7 +116,6 @@ export const StyledLi = styled.li`
 
         &:hover {
             transform: scale(1.05);
-            text-decoration: underline;
         }
     }
 
@@ -121,13 +161,4 @@ export const P = styled.p`
     width: 100%;
     margin: 0 auto;
     font-size: 2rem;
-`;
-
-export const Social = styled.div`
-    font-family: "KottaOne";
-    font-size: 2.5rem;
-
-    ${respond("phone")`
-        font-size: 3.5rem;
-    `}
 `;
