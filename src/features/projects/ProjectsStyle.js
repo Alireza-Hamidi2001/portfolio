@@ -105,7 +105,9 @@ export const P = styled.h1`
         font-size: 2.4rem;
         padding: 0 1rem;
         cursor: pointer;
-        animation: moreProjects 0.8s infinite;
+        animation: moreProjects 1s infinite;
+        background: #ffd50227;
+        margin: 0 1rem;
     }
 `;
 

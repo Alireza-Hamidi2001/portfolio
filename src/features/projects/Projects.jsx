@@ -35,6 +35,7 @@ function Projects() {
                                 muted
                                 autoPlay
                                 loop
+                                poster={item.image}
                             >
                                 <source
                                     src={item.src}

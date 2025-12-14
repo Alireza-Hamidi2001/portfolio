@@ -15,6 +15,10 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
 
+    @include respond(tab-land) {
+        font-size: 57%;
+    }
+
     @include respond(tab-port) {
         font-size: 50%;
     }

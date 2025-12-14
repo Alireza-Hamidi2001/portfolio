@@ -2,21 +2,13 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
     background: var(--color-primary-dark);
-    /* background: red; */
     font-size: 1.5rem;
     text-align: center;
     padding: 5rem 0 5rem 0;
-    margin-top: -8rem;
 
     display: grid;
     justify-content: space-evenly;
     gap: 2rem;
-
-    /* transform: skewY(-6deg); */
-    & > * {
-        /* transform: skewY(6deg); */
-    }
-
     color: var(--color-primary-light);
 
     & p {
