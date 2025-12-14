@@ -2,11 +2,15 @@
 
 .skillbar-root {
     margin-bottom: 1rem;
-    width: 40vw;
+    // width: 40vw;
     margin: 0 auto;
 
+    @include respond(tab-land) {
+        // width: 30vw;
+    }
+
     @include respond(phone) {
-        width: 70vw;
+        // width: 70vw;
     }
 }
 
@@ -38,12 +42,17 @@
     background: var(--color-primary-light);
     border-radius: 1rem;
     overflow: hidden;
+    
+    @include respond(phone) {
+        height: 2rem;
+        border-radius: 0.5rem;
+    }
 }
 
 .skillbar-fill {
     height: 100%;
     border-radius: 1rem;
     background: linear-gradient(90deg,
-            var(--color-gold),
-            var(--color-gold-dark));
+            // var(--color-red-100),
+            var(--color-red-200));
 }

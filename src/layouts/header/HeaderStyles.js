@@ -64,6 +64,9 @@ export const Information = styled.div`
     height: 85vh;
     padding: 0 4rem 12rem 0;
 
+    ${respond("tab-land")`
+        padding: 0 0rem 12rem 0;
+    `}
     ${respond("phone")`
         grid-template-columns: 1fr;
         padding: 0;
@@ -132,15 +135,14 @@ export const H3 = styled.h3`
     color: var(--color-green-dark);
     font-size: 2rem;
     word-spacing: 4px;
+    text-indent: 3rem;
 `;
 export const P = styled.p`
     text-indent: 4rem;
     font-family: "open-sans";
     font-weight: 100 !important;
     color: var(--color-primary-light);
-
     padding-left: 8rem;
-
     position: relative;
 
     & span {
@@ -151,10 +153,21 @@ export const P = styled.p`
             font-size: 1.5rem;
             font-family: "Edu";
             padding-left: 8rem;
+
+            ${respond("tab-land")`
+            left: -2rem;
+            `}
         }
         font-size: 8rem;
         margin-right: 1rem;
         font-family: "Caveat";
+        
+        ${respond("tab-land")`
+            font-size: 6rem;
+    `}
+        ${respond("phone")`
+            font-size: 10rem;
+    `}
     }
 `;
 
@@ -174,9 +187,18 @@ export const ImageWrapper = styled.div`
         top: 25rem;
         left: 20rem;
         animation: imageFrame 1s infinite;
+        display: none;
+        
+        ${respond("tab-port")`
+        width: 10rem;
+        height: 10rem;
+        top: 25rem;
+        left: 10rem;
+        `}
 
         ${respond("phone")`
-    `}
+            display: none;
+        `}
     }
 
     img {
@@ -185,5 +207,14 @@ export const ImageWrapper = styled.div`
         object-fit: cover;
         position: relative;
         margin: 0 auto;
+
+        ${respond("tab-port")`
+            width: 40rem;
+            height: 40rem;
+    `}
+        ${respond("phone")`
+            width: 65rem;
+            height: 65rem;
+    `}
     }
 `;
