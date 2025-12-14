@@ -42,7 +42,7 @@
     background: var(--color-primary-light);
     border-radius: 1rem;
     overflow: hidden;
-    
+
     @include respond(phone) {
         height: 2rem;
         border-radius: 0.5rem;
@@ -53,6 +53,11 @@
     height: 100%;
     border-radius: 1rem;
     background: linear-gradient(90deg,
-            // var(--color-red-100),
+            var(--color-red-100),
             var(--color-red-200));
+
+    @include respond(phone) {
+        border-radius: 0.5rem;
+    }
+
 }

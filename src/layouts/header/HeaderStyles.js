@@ -99,6 +99,10 @@ export const Information = styled.div`
             font-style: italic;
             margin-left: 2rem;
             padding-left: 8rem;
+            
+            ${respond("phone")`
+                font-size: 2.8rem;
+            `}
         }
 
         .Typewriter__cursor {
@@ -129,6 +133,7 @@ export const H1 = styled.h1`
 
     ${respond("phone")`
         margin-top: 10rem;
+        font-size: 2.5rem;
         `}
 `;
 export const H3 = styled.h3`
@@ -161,12 +166,12 @@ export const P = styled.p`
         font-size: 8rem;
         margin-right: 1rem;
         font-family: "Caveat";
-        
+
         ${respond("tab-land")`
             font-size: 6rem;
     `}
         ${respond("phone")`
-            font-size: 10rem;
+            font-size: 8rem;
     `}
     }
 `;
@@ -188,7 +193,7 @@ export const ImageWrapper = styled.div`
         left: 20rem;
         animation: imageFrame 1s infinite;
         display: none;
-        
+
         ${respond("tab-port")`
         width: 10rem;
         height: 10rem;
@@ -213,8 +218,8 @@ export const ImageWrapper = styled.div`
             height: 40rem;
     `}
         ${respond("phone")`
-            width: 65rem;
-            height: 65rem;
+            width: 85vw;
+            height: 85vw;
     `}
     }
 `;
