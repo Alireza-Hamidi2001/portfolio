@@ -9,7 +9,7 @@ import { FaChartLine } from "react-icons/fa6";
 import { GiSkills } from "react-icons/gi";
 import { StyledLogo, StyledUl } from "./HeaderStyles";
 import { PiCertificateThin } from "react-icons/pi";
-
+import { Link } from "react-router-dom";
 
 function HeaderMenu() {
     return (
@@ -42,8 +42,14 @@ function HeaderMenu() {
                 <li>
                     <a href="#projects">
                         <FaChartLine />
-                        Projects
+                        Projects overview
                     </a>
+                </li>
+                <li>
+                    <Link to="/projects">
+                        <FaChartLine />
+                        Projects
+                    </Link>
                 </li>
                 <li>
                     <a href="#certificates">

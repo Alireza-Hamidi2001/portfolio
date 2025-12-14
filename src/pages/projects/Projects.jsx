@@ -17,11 +17,24 @@ import { GoHome } from "react-icons/go";
 import { Link } from "react-router-dom";
 import { videosInformation } from "../../data/demos";
 import { FaLink } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import {
+    fadeBottom,
+    fadeLeft,
+    fadeRight,
+    fadeTop,
+} from "../../framer-motion/variant";
 
 function Projects() {
     return (
         <StyledProjectPage>
-            <Header>
+            <Header
+                as={motion.header}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.2 }}
+                variants={fadeBottom}
+            >
                 <img
                     src={logo}
                     alt="logo in projects page"
@@ -38,22 +51,48 @@ function Projects() {
             <ProjectContainer>
                 {videosInformation.map((project) => (
                     <Project>
-                        <video
+                        <motion.video
                             muted
                             autoPlay
                             loop
                             poster={project.image}
+                            initial="hidden"
+                            whileInView="show"
+                            viewport={{ once: false, amount: 0.2 }}
+                            variants={fadeTop}
                         >
                             <source
                                 src={project.src}
                                 type="video/mp4"
                             />
-                        </video>
+                        </motion.video>
                         <section>
-                            <H1>{project.title}</H1>
-                            <List>
+                            <H1
+                                as={motion.header}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false, amount: 0.2 }}
+                                variants={fadeBottom}
+                            >
+                                {project.title}
+                            </H1>
+                            <List
+                                as={motion.ul}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false, amount: 0.2 }}
+                                variants={fadeLeft}
+                            >
                                 {project.description.map((description) => (
-                                    <Item>{description}</Item>
+                                    <Item
+                                        as={motion.li}
+                                        initial="hidden"
+                                        whileInView="show"
+                                        viewport={{ once: false, amount: 0.2 }}
+                                        variants={fadeRight}
+                                    >
+                                        {description}
+                                    </Item>
                                 ))}
                                 <ProjectLink
                                     href={project.url}

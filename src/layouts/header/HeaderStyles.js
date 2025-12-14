@@ -16,7 +16,7 @@ export const StyledHeader = styled.div`
 
 export const StyledUl = styled.ul`
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
 
     ${respond("phone")`
@@ -26,7 +26,7 @@ export const StyledUl = styled.ul`
     & li {
         text-decoration: none;
         cursor: pointer;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         transition: all 0.3s;
         border-bottom: 1px solid transparent;
         padding: 1rem;
@@ -89,7 +89,6 @@ export const Information = styled.div`
         justify-content: center;
         font-family: "Edu";
         color: var(--color-primary-light);
-        /* padding: 0 0 0 8rem; */
 
         .Typewriter__wrapper {
             font-size: 2rem;
