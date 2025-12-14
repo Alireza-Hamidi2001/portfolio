@@ -51,6 +51,10 @@ export const StyledUl = styled.ul`
 export const StyledLogo = styled.div`
     & img {
         width: 18rem;
+
+        ${respond("phone")`
+            width: 25rem;
+        `}
     }
 `;
 
@@ -181,6 +185,5 @@ export const ImageWrapper = styled.div`
         object-fit: cover;
         position: relative;
         margin: 0 auto;
-
     }
 `;
