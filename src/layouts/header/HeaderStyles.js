@@ -31,13 +31,6 @@ export const StyledUl = styled.ul`
         border-bottom: 1px solid transparent;
         padding: 1rem;
 
-        /* color: gold; */
-
-        &:hover {
-            border-bottom: 1px solid var(--color-primary-text);
-            transform: scale(1.05);
-        }
-
         & a {
             color: var(--color-primary-light);
             text-decoration: none;
@@ -45,6 +38,14 @@ export const StyledUl = styled.ul`
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            transition: all 0.3s;
+
+            font-family: "open-sans";
+
+            &:hover {
+                color: var(--color-blue-light);
+                font-weight: bold;
+            }
         }
     }
 `;
@@ -98,7 +99,7 @@ export const Information = styled.div`
             font-style: italic;
             margin-left: 2rem;
             padding-left: 8rem;
-            
+
             ${respond("phone")`
                 font-size: 2.8rem;
             `}
