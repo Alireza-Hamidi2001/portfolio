@@ -69,8 +69,8 @@ export const videosInformation = [
     {
         id: 5,
         title: "Movie Mate App",
-        src: "https://res.cloudinary.com/dynzxnubr/video/upload/v1765621185/movieMate_qjmufn.mp4",
-        url: "https://alireza-hamidi2001.github.io/Movie-Mate/",
+        src: "https://res.cloudinary.com/direu398z/video/upload/v1767640470/movie_tc3zt4.mp4",
+        url: "https://res.cloudinary.com/direu398z/image/upload/v1767640890/movie_cf77kz.png",
         image: { moviemate },
         description: [
             "A movie-related web application for browsing or managing films.",
